@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Project | Atef Boutara</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Project details, Atef Boutara's Game Developer Portfolio" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ---- Project Page Specific ---- */
+
+			.project-page {
+				max-width: 64rem;
+				margin: 0 auto;
+				padding: 0 2rem 4rem;
+				position: relative;
+				z-index: 2;
+			}
+
+			/* Back button */
+			.back-btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				margin: 2.5rem 0 2rem;
+				padding: 0.55rem 1.4rem;
+				font-family: 'Space Grotesk', sans-serif;
+				font-size: 0.88rem;
+				font-weight: 600;
+				color: var(--text-secondary) !important;
+				border: 1px solid var(--border-glass) !important;
+				border-radius: 100px;
+				background: rgba(255, 255, 255, 0.04) !important;
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				text-decoration: none !important;
+				transition: all 0.3s var(--ease-smooth) !important;
+				cursor: pointer;
+			}
+
+			.back-btn:hover {
+				color: var(--accent-cyan) !important;
+				border-color: var(--accent-cyan) !important;
+				background: rgba(34, 211, 238, 0.06) !important;
+				box-shadow: 0 0 20px rgba(34, 211, 238, 0.1);
+			}
+
+			.back-btn i {
+				transition: transform 0.3s var(--ease-smooth);
+				font-size: 0.8rem;
+			}
+
+			.back-btn:hover i {
+				transform: translateX(-3px);
+			}
+
+			/* Hero */
+			.project-hero {
+				width: 100%;
+				max-height: 28rem;
+				overflow: hidden;
+				border-radius: var(--radius-xl);
+				border: 1px solid var(--border-glass);
+				margin-bottom: 3rem;
+				position: relative;
+			}
+
+			.project-hero img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+
+			/* Header */
+			.project-header {
+				margin-bottom: 3rem;
+			}
+
+			.project-header h1 {
+				font-size: 3rem !important;
+				font-weight: 700 !important;
+				line-height: 1.12 !important;
+				letter-spacing: -0.02em !important;
+				margin-bottom: 1rem !important;
+				background: var(--gradient-main);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.project-lead {
+				font-size: 1.15rem !important;
+				color: var(--text-secondary) !important;
+				line-height: 1.75 !important;
+				max-width: 50rem;
+			}
+
+			/* Content sections */
+			.project-sections {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2.5rem;
+				margin-bottom: 3rem;
+			}
+
+			.project-section {
+				background: var(--bg-card);
+				border: 1px solid var(--border-subtle);
+				border-radius: var(--radius-lg);
+				padding: 2rem;
+				transition: border-color 0.3s var(--ease-smooth);
+			}
+
+			.project-section:hover {
+				border-color: var(--border-glass);
+			}
+
+			.project-section h3 {
+				font-size: 0.82rem !important;
+				font-weight: 600 !important;
+				text-transform: uppercase !important;
+				letter-spacing: 0.08em !important;
+				color: var(--accent-violet) !important;
+				margin-bottom: 1rem !important;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+
+			.project-section h3 i {
+				font-size: 0.9rem;
+				opacity: 0.7;
+			}
+
+			.project-section p {
+				color: var(--text-secondary) !important;
+				font-size: 0.95rem;
+				line-height: 1.75;
+			}
+
+			.project-section ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.project-section li {
+				color: var(--text-secondary);
+				font-size: 0.92rem;
+				line-height: 1.7;
+				margin-bottom: 0.6rem;
+				padding-left: 1.3rem;
+				position: relative;
+			}
+
+			.project-section li::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0.65rem;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: var(--accent-violet);
+				opacity: 0.6;
+			}
+
+			/* Tags */
+			.project-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-bottom: 3rem;
+			}
+
+			.project-tags span {
+				background: rgba(167, 139, 250, 0.08);
+				border: 1px solid rgba(167, 139, 250, 0.2);
+				border-radius: 100px;
+				font-family: 'Space Grotesk', sans-serif;
+				font-size: 0.72rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				padding: 0.3rem 0.85rem;
+				text-transform: uppercase;
+				color: var(--accent-violet);
+				transition: all 0.3s var(--ease-smooth);
+			}
+
+			.project-tags span:hover {
+				background: rgba(167, 139, 250, 0.15);
+				border-color: rgba(167, 139, 250, 0.4);
+				box-shadow: 0 0 12px rgba(167, 139, 250, 0.15);
+			}
+
+			/* Project navigation */
+			.project-nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 2rem;
+				border-top: 1px solid var(--border-subtle);
+			}
+
+			.project-nav a {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-family: 'Space Grotesk', sans-serif;
+				font-size: 0.88rem;
+				font-weight: 600;
+				color: var(--text-secondary) !important;
+				text-decoration: none !important;
+				border: none !important;
+				transition: color 0.3s var(--ease-smooth) !important;
+				padding: 0.5rem 0;
+			}
+
+			.project-nav a:hover {
+				color: var(--accent-cyan) !important;
+			}
+
+			.project-nav a i {
+				transition: transform 0.3s var(--ease-smooth);
+				font-size: 0.75rem;
+			}
+
+			.project-nav a.nav-prev:hover i {
+				transform: translateX(-4px);
+			}
+
+			.project-nav a.nav-next:hover i {
+				transform: translateX(4px);
+			}
+
+			.project-nav .nav-label {
+				font-size: 0.7rem;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--text-muted);
+				display: block;
+				margin-bottom: 0.15rem;
+			}
+
+			/* Responsive */
+			@media screen and (max-width: 736px) {
+				.project-page {
+					padding: 0 1rem 3rem;
+				}
+
+				.project-header h1 {
+					font-size: 2rem !important;
+				}
+
+				.project-lead {
+					font-size: 1rem !important;
+				}
+
+				.project-hero {
+					max-height: 16rem;
+					border-radius: var(--radius-lg);
+				}
+
+				.project-sections {
+					grid-template-columns: 1fr;
+					gap: 1.5rem;
+				}
+
+				.project-section {
+					padding: 1.5rem;
+				}
+
+				.project-nav {
+					flex-direction: column;
+					gap: 1rem;
+					align-items: stretch;
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+
+			<div class="project-page">
+				<a href="index.html" class="back-btn" id="back-btn">
+					<i class="fas fa-arrow-left"></i> Back to Portfolio
+				</a>
+
+				<div class="project-hero" id="project-hero">
+					<img id="hero-img" src="" alt="" />
+				</div>
+
+				<div class="project-header">
+					<h1 id="project-title"></h1>
+					<p class="project-lead" id="project-lead"></p>
+				</div>
+
+				<div id="project-tags" class="project-tags"></div>
+
+				<div id="project-sections" class="project-sections"></div>
+
+				<nav class="project-nav" id="project-nav"></nav>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		(function () {
+			'use strict';
+
+			var projects = {
+				plooshy: {
+					title: 'Plooshy Island',
+					lead: 'An ambitious open-world WebGL multiplayer blockchain game, aiming to create an immersive WEB3 gaming experience for players world-wide.',
+					image: 'images/plooshy_island.jpg',
+					tags: ['Unity', 'WebGL', 'Blockchain', 'WEB3', 'Multiplayer', 'Open World'],
+					sections: [
+						{
+							icon: 'fas fa-gamepad',
+							heading: 'Overview',
+							content: '<p>Plooshy Island is a large-scale WebGL multiplayer game built to run directly in the browser, leveraging blockchain technology for in-game ownership and economy. The project aimed to push the boundaries of what\'s possible in browser-based multiplayer gaming, delivering a persistent open-world experience without requiring any downloads or installs.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Open-world exploration with real-time multiplayer interactions across a persistent island environment</li><li>Browser-based WebGL rendering optimized for performance and zero-install accessibility</li><li>Blockchain-integrated economy with player-owned assets and verifiable digital ownership</li><li>WEB3 wallet connectivity for seamless on-chain transactions and item trading</li><li>Persistent world state maintained across play sessions through server-authoritative architecture</li></ul>'
+						}
+					]
+				},
+				epoch: {
+					title: 'Epoch Conquest',
+					lead: 'A real-time strategy multiplayer desktop game set in a dynamic world where history and mythology converge, emphasizing tactical decision-making, resource management, and military strategy.',
+					image: 'images/epoch_conquest.jpg',
+					tags: ['Unity', 'RTS', 'Multiplayer', 'Desktop', 'Strategy', 'Networking'],
+					sections: [
+						{
+							icon: 'fas fa-chess',
+							heading: 'Overview',
+							content: '<p>Epoch Conquest blends historical civilizations with mythological elements in a competitive RTS experience. Players command armies across sprawling maps, manage complex resource chains, and make split-second tactical decisions in a persistent multiplayer world where strategy, timing, and adaptability determine victory.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Real-time tactical combat with diverse unit types, formations, and special abilities</li><li>Deep resource management with multi-tiered gathering, production, and trade systems</li><li>Multiplayer battles with competitive matchmaking and ranked progression</li><li>Historical and mythological factions, each with unique units, buildings, and tech trees</li><li>Dynamic world events and map hazards that reshape the battlefield mid-match</li></ul>'
+						}
+					]
+				},
+				vecos: {
+					title: 'Vecos',
+					lead: 'A multiplatform multiplayer game where players join collaborative sessions for educational activities and artistic creations that can be exhibited and rated in a shared showroom.',
+					image: 'images/vecos.jpg',
+					tags: ['Unity', 'Multiplayer', 'Education', 'Cross-Platform', 'Creative', 'Social'],
+					sections: [
+						{
+							icon: 'fas fa-palette',
+							heading: 'Overview',
+							content: '<p>Vecos brings people together through creative and educational multiplayer experiences. Players join live sessions to participate in collaborative art projects, guided educational activities, and creative challenges. The platform features an interactive showroom where finished works are showcased, allowing the community to browse, rate, and celebrate each other\'s creations.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Collaborative multiplayer sessions supporting both group creativity and guided learning</li><li>Solo and co-op artistic creation tools with a variety of media and techniques</li><li>Interactive virtual showroom for exhibiting finished work to the community</li><li>Community-driven rating and feedback system for exhibited pieces</li><li>Cross-platform deployment for broad accessibility across devices</li></ul>'
+						}
+					]
+				},
+				sevenseas: {
+					title: 'Seven Seas',
+					lead: 'A pirates multiplayer Unity3D game where players crew ships together, engage in naval combat, and explore a vast open ocean world.',
+					image: 'images/seven_seas.jpg',
+					tags: ['Unity', 'Multiplayer', 'Open World', 'Naval Combat', 'Co-op', 'PvP'],
+					sections: [
+						{
+							icon: 'fas fa-ship',
+							heading: 'Overview',
+							content: '<p>Seven Seas is a cooperative pirate adventure where players crew ships together, engage in naval combat, and explore an expansive open ocean. The game emphasizes teamwork, from manning cannons and repairing hulls to navigating treacherous waters and raiding enemy vessels. Every voyage brings the risk of player encounters, sea monsters, and storms.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Multiplayer ship crews with role-based gameplay: captain, gunner, navigator, engineer</li><li>Real-time naval combat with physics-driven sailing, wind systems, and cannon ballistics</li><li>Open-world ocean exploration with procedurally placed islands, wrecks, and treasure</li><li>PvP ship encounters and PvE threats including AI merchant convoys and sea creatures</li><li>Ship customization, upgrades, and cosmetic progression across voyages</li></ul>'
+						}
+					]
+				},
+				hush: {
+					title: 'Hush',
+					lead: 'A horror multiplayer game inspired by the slasher mod in GTA V, featuring a custom Node.js + Socket.io matchmaking backend and asymmetric gameplay.',
+					image: 'images/hush.jpg',
+					tags: ['Unity', 'Node.js', 'Socket.io', 'Horror', 'Multiplayer', 'Asymmetric'],
+					sections: [
+						{
+							icon: 'fas fa-ghost',
+							heading: 'Overview',
+							content: '<p>Hush is an asymmetric horror experience where 5 players are matched into a session and one is randomly chosen as the slasher. Survivors must evade, hide, and outlast the hunter across dark, atmospheric maps. The custom matchmaking backend, built with Node.js and Socket.io, handles lobby formation, player readiness checks, and role assignment before launching each round.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Asymmetric multiplayer, 1 slasher vs 4 survivors with distinct mechanics for each role</li><li>Custom real-time matchmaking server built from scratch with Node.js and Socket.io</li><li>Automatic lobby formation with 5-player capacity and random slasher selection</li><li>Atmospheric horror environments with dynamic lighting and audio-driven tension</li><li>Real-time player position synchronization and event broadcasting across the session</li></ul>'
+						}
+					]
+				},
+				onyourown: {
+					title: 'On Your Own',
+					lead: 'A survival multiplayer game inspired by Rust, featuring a server browser, full building system, PvP combat, wildlife, and party-based social systems.',
+					image: 'images/on_your_own.jpg',
+					tags: ['Unity', 'Survival', 'PvP', 'Building', 'Multiplayer', 'Open World'],
+					sections: [
+						{
+							icon: 'fas fa-campground',
+							heading: 'Overview',
+							content: '<p>On Your Own drops players into a hostile open world where they must gather resources, build shelters, hunt wildlife, and defend against other players. The game features a complete server browser for discovering and joining community-hosted sessions, along with robust social systems like party invitations, real-time chat, and cooperative base building.</p>'
+						},
+						{
+							icon: 'fas fa-list-check',
+							heading: 'Key Features',
+							content: '<ul><li>Full building system with snapping foundations, walls, roofs, doors, and fortifications</li><li>Server browser with filters for discovering and joining community-hosted sessions</li><li>PvP combat with melee and ranged weapons, loot-on-death, and territory control</li><li>Wildlife AI with huntable animals for resources and hostile creatures as environmental threats</li><li>Real-time text chat, party/group system, and shared base permissions for cooperative play</li></ul>'
+						}
+					]
+				}
+			};
+
+			// Project order for prev/next navigation
+			var projectOrder = ['plooshy', 'epoch', 'vecos', 'sevenseas', 'hush', 'onyourown'];
+
+			function getProjectId() {
+				var params = new URLSearchParams(window.location.search);
+				return params.get('id');
+			}
+
+			function render(id) {
+				var p = projects[id];
+				if (!p) {
+					document.querySelector('.project-page').innerHTML =
+						'<a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>' +
+						'<div class="project-header"><h1>Project Not Found</h1><p class="project-lead">This project doesn\'t exist. Head back to the portfolio.</p></div>';
+					return;
+				}
+
+				// Title tag
+				document.title = p.title + ' | Atef Boutara';
+
+				// Hero
+				var heroImg = document.getElementById('hero-img');
+				heroImg.src = p.image;
+				heroImg.alt = p.title;
+
+				// Header
+				document.getElementById('project-title').textContent = p.title;
+				document.getElementById('project-lead').textContent = p.lead;
+
+				// Tags
+				var tagsEl = document.getElementById('project-tags');
+				tagsEl.innerHTML = p.tags.map(function (t) { return '<span>' + t + '</span>'; }).join('');
+
+				// Sections
+				var sectionsEl = document.getElementById('project-sections');
+				sectionsEl.innerHTML = p.sections.map(function (s) {
+					return '<div class="project-section">' +
+						'<h3><i class="' + s.icon + '"></i> ' + s.heading + '</h3>' +
+						s.content +
+						'</div>';
+				}).join('');
+
+				// Navigation (prev / next)
+				var idx = projectOrder.indexOf(id);
+				var navEl = document.getElementById('project-nav');
+				var navHtml = '';
+
+				if (idx > 0) {
+					var prevId = projectOrder[idx - 1];
+					navHtml += '<a href="project.html?id=' + prevId + '" class="nav-prev">' +
+						'<i class="fas fa-arrow-left"></i>' +
+						'<div><span class="nav-label">Previous</span>' + projects[prevId].title + '</div></a>';
+				} else {
+					navHtml += '<span></span>';
+				}
+
+				if (idx < projectOrder.length - 1) {
+					var nextId = projectOrder[idx + 1];
+					navHtml += '<a href="project.html?id=' + nextId + '" class="nav-next">' +
+						'<div><span class="nav-label">Next</span>' + projects[nextId].title + '</div>' +
+						'<i class="fas fa-arrow-right"></i></a>';
+				} else {
+					navHtml += '<span></span>';
+				}
+
+				navEl.innerHTML = navHtml;
+			}
+
+			// Run
+			var id = getProjectId();
+			if (id) {
+				render(id);
+			} else {
+				window.location.href = 'index.html';
+			}
+
+			// Remove preload
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					document.body.classList.remove('is-preload');
+				}, 100);
+			});
+		})();
+		</script>
+	</body>
+</html>

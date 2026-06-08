@@ -1,624 +1,458 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Atef Boutara's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.winzy-case-study .winzy-media {
-				display: grid;
-				grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-				gap: 1.5rem;
-				align-items: start;
-				margin: 2rem 0;
-				min-width: 0;
-			}
+<html lang="en">
 
-			.winzy-case-study .winzy-media > div,
-			.winzy-case-study .winzy-grid > section {
-				min-width: 0;
-			}
+<head>
+	<title>Atef Boutara | Game Developer Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Portfolio of Atef Boutara, experienced game developer specializing in multiplayer games, full-stack platforms, and immersive gaming experiences built with Unity, Photon Quantum, and .NET." />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-			.winzy-case-study video,
-			.winzy-case-study .winzy-media img {
-				display: block;
-				width: 100%;
-				border-radius: 6px;
-				border: solid 1px rgba(160, 160, 160, 0.35);
-				background: #10131a;
-			}
+<body class="is-preload">
 
-			.winzy-case-study .winzy-caption {
-				margin: 0.75rem 0 0;
-				color: #6f7785;
-				font-size: 0.85rem;
-				line-height: 1.55;
-				text-align: left;
-			}
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-			.winzy-case-study .winzy-overview {
-				max-width: 60rem;
-				margin: 0 auto 2rem auto;
-			}
+		<!-- Intro -->
+		<div id="intro">
+			<canvas id="intro-particles" aria-hidden="true"></canvas>
+			<h1>Atef Boutara</h1>
+			<p>Game Developer & Full-Stack Engineer building multiplayer-first experiences: competitive FPS arenas, blockchain-powered wagering platforms, and the backend infrastructure that ties it all together.</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
 
-			.winzy-case-study .winzy-grid {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 2rem;
-				margin: 2rem 0;
-				text-align: left;
-			}
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
 
-			.winzy-case-study .winzy-panel {
-				border-top: solid 3px #ff7a1a;
-				padding-top: 1rem;
-			}
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="#main">Projects</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://github.com/atefboutara" target="_blank" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
 
-			.winzy-case-study .winzy-panel.launcher {
-				border-top-color: #e92f7f;
-			}
+		<!-- Main -->
+		<div id="main">
 
-			.winzy-case-study .winzy-panel.backend {
-				border-top-color: #4b7bec;
-			}
+			<!-- Chronos: Dawn of Time -->
+			<article class="post featured reveal">
+				<header class="major">
+					<h2><a href="#">Chronos: Dawn of Time</a></h2>
+				</header>
+				<a href="#" class="image main"><img src="images/chronos_dawn_of_time.jpg"
+						alt="Chronos: Dawn of Time" /></a>
 
-			.winzy-case-study .winzy-panel.delivery {
-				border-top-color: #20a67a;
-			}
+				<p>Chronos: Dawn of Time is an RPG multiplayer mobile and desktop game that seamlessly combines the
+					immersive qualities of a single-player on a multiplayer gaming experience with the innovative
+					capabilities of blockchain technology and NFTs.</p>
+				<ul class="actions special">
 
-			.winzy-case-study .winzy-panel h3 {
-				margin: 0 0 0.75rem 0;
-			}
+				</ul>
+			</article>
 
-			.winzy-case-study .winzy-panel p {
-				text-align: left;
-			}
+			<!-- Winzy -->
+			<article class="post featured winzy-case-study reveal">
+				<header class="major">
+					<span class="date">Featured Full-Stack Game Platform</span>
+					<h2><a href="#"><span class="winzy-title-part">Winzy:</span> <span class="winzy-title-part">Full
+								Moon Fury</span> <span class="winzy-title-part">&amp; Winzy Desktop</span></a></h2>
+					<p>A competitive gaming platform I built across a Photon Quantum FPS, a cross-platform desktop
+						launcher, and a production backend for accounts, matchmaking, payments, builds, updates, and
+						player operations.</p>
+				</header>
 
-			.winzy-case-study .winzy-panel ul {
-				margin: 0 0 0 1.15rem;
-				padding: 0;
-			}
-
-			.winzy-case-study .winzy-panel li {
-				margin-bottom: 0.6rem;
-			}
-
-			.winzy-case-study .winzy-tags {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 0.5rem;
-				list-style: none;
-				margin: 2rem 0 0 0;
-				padding: 0;
-			}
-
-			.winzy-case-study .winzy-tags li {
-				border: solid 1px rgba(160, 160, 160, 0.45);
-				border-radius: 4px;
-				font-size: 0.75rem;
-				font-weight: 600;
-				letter-spacing: 0.05em;
-				padding: 0.3rem 0.65rem;
-				text-transform: uppercase;
-			}
-
-			.winzy-case-study .winzy-title-part {
-				white-space: nowrap;
-			}
-
-			@media screen and (max-width: 980px) {
-				.winzy-case-study .winzy-media,
-				.winzy-case-study .winzy-grid {
-					grid-template-columns: 1fr;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#main {
-					width: 100% !important;
-				}
-
-				.winzy-case-study {
-					box-sizing: border-box;
-					max-width: 100% !important;
-					overflow: hidden;
-					padding-left: 1.25rem !important;
-					padding-right: 1.25rem !important;
-					width: 100% !important;
-				}
-
-				.winzy-case-study * {
-					box-sizing: border-box;
-				}
-
-				.winzy-case-study header.major h2 {
-					font-size: 1.35rem;
-					letter-spacing: 0;
-					line-height: 1.18;
-					overflow-wrap: anywhere;
-				}
-
-				.winzy-case-study .winzy-title-part {
-					display: block;
-					white-space: normal;
-				}
-
-				.winzy-case-study .winzy-media {
-					overflow: hidden;
-					width: 100%;
-				}
-
-				.winzy-case-study header.major p,
-				.winzy-case-study .winzy-overview p,
-				.winzy-case-study .winzy-caption,
-				.winzy-case-study .winzy-panel p,
-				.winzy-case-study .winzy-panel li {
-					overflow-wrap: anywhere;
-					text-align: left;
-				}
-
-				.winzy-case-study .winzy-tags {
-					justify-content: flex-start;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				.winzy-case-study header.major h2 {
-					font-size: 1.25rem;
-				}
-			}
-
-			.wagering-case-study .wagering-media {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 1rem;
-				margin: 2rem 0;
-			}
-
-			.wagering-case-study .wagering-shot {
-				min-width: 0;
-			}
-
-			.wagering-case-study .wagering-shot img {
-				display: block;
-				width: 100%;
-				border-radius: 6px;
-				border: solid 1px rgba(160, 160, 160, 0.35);
-				background: #151515;
-			}
-
-			.wagering-case-study .wagering-caption {
-				margin: 0.55rem 0 0;
-				color: #6f7785;
-				font-size: 0.85rem;
-				line-height: 1.5;
-				text-align: left;
-			}
-
-			.wagering-case-study .wagering-grid {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 2rem;
-				margin: 2rem 0;
-				text-align: left;
-			}
-
-			.wagering-case-study .wagering-panel {
-				border-top: solid 3px #f0b429;
-				padding-top: 1rem;
-				min-width: 0;
-			}
-
-			.wagering-case-study .wagering-panel.backend {
-				border-top-color: #367bf5;
-			}
-
-			.wagering-case-study .wagering-panel.security {
-				border-top-color: #20a67a;
-			}
-
-			.wagering-case-study .wagering-panel h3 {
-				margin: 0 0 0.75rem 0;
-			}
-
-			.wagering-case-study .wagering-panel p {
-				text-align: left;
-			}
-
-			.wagering-case-study .wagering-panel ul {
-				margin: 0 0 0 1.15rem;
-				padding: 0;
-			}
-
-			.wagering-case-study .wagering-panel li {
-				margin-bottom: 0.6rem;
-			}
-
-			.wagering-case-study .wagering-tags {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 0.5rem;
-				list-style: none;
-				margin: 2rem 0 0 0;
-				padding: 0;
-			}
-
-			.wagering-case-study .wagering-tags li {
-				border: solid 1px rgba(160, 160, 160, 0.45);
-				border-radius: 4px;
-				font-size: 0.75rem;
-				font-weight: 600;
-				letter-spacing: 0.05em;
-				padding: 0.3rem 0.65rem;
-				text-transform: uppercase;
-			}
-
-			@media screen and (max-width: 980px) {
-				.wagering-case-study .wagering-media,
-				.wagering-case-study .wagering-grid {
-					grid-template-columns: 1fr;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				.wagering-case-study {
-					box-sizing: border-box;
-					max-width: 100% !important;
-					overflow: hidden;
-					padding-left: 1.25rem !important;
-					padding-right: 1.25rem !important;
-					width: 100% !important;
-				}
-
-				.wagering-case-study * {
-					box-sizing: border-box;
-				}
-
-				.wagering-case-study header.major h2 {
-					font-size: 1.35rem;
-					letter-spacing: 0;
-					line-height: 1.18;
-					overflow-wrap: anywhere;
-				}
-
-				.wagering-case-study header.major p,
-				.wagering-case-study p,
-				.wagering-case-study li,
-				.wagering-case-study .wagering-caption {
-					overflow-wrap: anywhere;
-					text-align: left;
-				}
-
-				.wagering-case-study .wagering-tags {
-					justify-content: flex-start;
-				}
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Atef Boutara's Portfolio</h1>
-						<p>Dynamic and innovative experienced Game Developer specializing in crafting immersive gaming experiences.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+				<div class="winzy-media">
+					<div>
+						<video controls muted playsinline preload="metadata" poster="images/winzy-demo-poster.jpg" aria-label="Full Moon Fury gameplay demo">
+							<source src="images/winzy-demo.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<p class="winzy-caption">Full Moon Fury gameplay demo: the Unity FPS running through the Winzy
+							match flow, with real multiplayer-facing UI, combat feedback, and match-state presentation.
+						</p>
 					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="icons">
-							<li><a href="https://github.com/atefboutara" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-
-					<!-- Chronos: Dawn of Time -->
-					<article class="post featured">
-						<header class="major">
-							<h2><a href="#">Chronos: Dawn of Time</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/chronos_dawn_of_time.jpg" alt="Chronos: Dawn of Time" /></a>
-
-						<p>Chronos: Dawn of Time is an RPG multiplayer mobile and desktop game that seamlessly combines the immersive qualities of a single-player on a multiplayer gaming experience with the innovative capabilities of blockchain technology and NFTs.</p>
-						<ul class="actions special">
-
-						</ul>
-					</article>
-
-					<!-- Winzy -->
-					<article class="post featured winzy-case-study">
-						<header class="major">
-							<span class="date">Featured Full-Stack Game Platform</span>
-							<h2><a href="#"><span class="winzy-title-part">Winzy:</span> <span class="winzy-title-part">Full Moon Fury</span> <span class="winzy-title-part">&amp; Winzy Desktop</span></a></h2>
-							<p>A competitive gaming platform I built across a Photon Quantum FPS, a cross-platform desktop launcher, and a production backend for accounts, matchmaking, payments, builds, updates, and player operations.</p>
-						</header>
-
-						<div class="winzy-media">
-							<div>
-								<video controls muted playsinline preload="metadata" aria-label="Full Moon Fury gameplay demo">
-									<source src="images/winzy-demo.mp4" type="video/mp4" />
-									Your browser does not support the video tag.
-								</video>
-								<p class="winzy-caption">Full Moon Fury gameplay demo: the Unity FPS running through the Winzy match flow, with real multiplayer-facing UI, combat feedback, and match-state presentation.</p>
-							</div>
-							<div>
-								<img src="images/winzy-launcher.png" alt="Winzy Desktop launcher game library" />
-								<p class="winzy-caption">Winzy Desktop launcher: a native Windows/macOS app for authentication, wallet access, game discovery, downloads, updates, and secure game launch.</p>
-							</div>
-						</div>
-
-						<section class="winzy-overview">
-							<p>Winzy is a skill-based competitive gaming platform where players can authenticate, download the game, join free or paid matches, compete in a Photon Quantum FPS, earn quest progress, and have match results settle through a backend wallet and payment system. I worked across the whole product surface: gameplay, client/backend integration, launcher, infrastructure, build delivery, and validation.</p>
-						</section>
-
-						<div class="winzy-grid">
-							<section class="winzy-panel game">
-								<h3>Full Moon Fury Game</h3>
-								<p>I built the game-side systems that turn the FPS into a platform-connected competitive product instead of a standalone prototype.</p>
-								<ul>
-									<li>Implemented Photon Quantum gameplay flow: spawning, health, weapons, pickups, respawns, warmup, countdown, skirmish, running match state, overtime, burn-phase resolution, disconnect handling, auto-victory, and end-of-match reporting.</li>
-									<li>Built the match coordinator that connects Unity to the backend and Photon: free and paid queues, payout-tier selection, ticket polling, estimated waits, match-found UI, Photon room startup, join tokens, connection confirmation, cancellation races, void detection, abandon calls, and automatic requeue recovery.</li>
-									<li>Created gameplay-facing UI for authentication, mode selection, matchmaking, paid-match errors, scoreboard, kill feed, crosshair feedback, health, weapons, game-over, payout screens, quests, surveys, loading states, mobile joystick controls, settings, verification, and consent flows.</li>
-									<li>Integrated quest telemetry from gameplay events, including match plays, wins, first-place finishes, kills, deaths, headshots, damage dealt, and weapon pickups with match-scoped idempotency keys.</li>
-									<li>Prepared the game for WebGL, desktop, and mobile/APK delivery with WebGL performance management, native mobile auth fallback, Android texture optimization, mobile input, and platform-specific build tooling.</li>
-								</ul>
-							</section>
-
-							<section class="winzy-panel launcher">
-								<h3>Winzy Desktop Launcher</h3>
-								<p>I created a native launcher so players can install, update, authenticate, and launch Winzy on Windows and macOS.</p>
-								<ul>
-									<li>Built a layered .NET launcher across Core, API, Services, UI, and MAUI projects, with login, registration, email verification, consent, wallet display, settings, game library, install state, and a custom dark themed interface.</li>
-									<li>Implemented game download and install flows: remote manifest fetching, cover images, install directory selection, disk-space checks, authenticated downloads, progress and speed tracking, SHA-256 verification, zip extraction, local install metadata, update detection, launch tracking, and uninstall support.</li>
-									<li>Added smart updates for installed games using per-file manifests, local hashing, changed-file downloads, deleted-file cleanup, empty-directory cleanup, fallback full-zip installs, and optional download throttling.</li>
-									<li>Built Windows and macOS launch bridges: Windows executable discovery and DPAPI auth handoff, macOS .app bundle discovery, executable-bit restoration, quarantine attribute removal, chmod-protected auth handoff, and launch through platform-specific process handling.</li>
-									<li>Connected launcher releases to backend-hosted update feeds with Velopack scaffolding, Codemagic configuration, release packaging scripts, macOS verification scripts, and platform-specific update delivery.</li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="winzy-grid">
-							<section class="winzy-panel backend">
-								<h3>Backend &amp; Infrastructure</h3>
-								<p>I engineered the backend as a production-style .NET platform powering the game, launcher, payments, and operations.</p>
-								<ul>
-									<li>Built a layered ASP.NET Core backend with Domain, Application, Infrastructure, and API projects using PostgreSQL, Redis, Hangfire, Stripe, S3-compatible storage, JWT auth, Serilog, Sentry, Swagger, health checks, rate limiting, CORS, and cloud-ready configuration.</li>
-									<li>Implemented identity, profile, consent, beta access, waitlist, wallet, KYC, payments, refunds, disputes, withdrawals, admin player management, game/ruleset administration, quests, surveys, weapon skins, replays, audit logs, risk flags, and brand events.</li>
-									<li>Designed paid and free matchmaking with queue tickets, idempotent enqueue, pay-tier validation, paid-play gating, long-poll status, late-join windows, roster locking, no-show removal, entry-fee holds, fee capture, match voiding, and ticket requeueing.</li>
-									<li>Built settlement logic for server-authoritative finalization, result hashes, placement recording, configurable payout policies, rake calculation, payout-tier snapshots, transaction-safe money movement, refund-only voids, admin-review routing, and recovery jobs.</li>
-								</ul>
-							</section>
-
-							<section class="winzy-panel delivery">
-								<h3>Testing, Release &amp; Delivery</h3>
-								<p>I pushed the project from prototype scope into a tested MVP that could be presented as a real platform.</p>
-								<ul>
-									<li>Created integration and contract test coverage for happy paths, webhook idempotency, invalid signatures, refunds, disputes, finalize security, join idempotency, gating, Photon custom auth, KYC, waitlist, matchmaking, surveys, fake providers, signed payloads, and real Stripe test behavior.</li>
-									<li>Shipped deployment work across Docker, database migrations, PostgreSQL/Redis URL parsing, upload limits, Sentry scrubbing, Hangfire recurring jobs, CI scripts, Unity build automation, macOS universal builds, desktop build APIs, launcher packaging, and S3-backed game/update delivery.</li>
-									<li>Built the platform to support WebGL, Windows, macOS, and Android APK paths, with mobile deployment work already prepared for the next release phase.</li>
-								</ul>
-							</section>
-						</div>
-
-						<ul class="winzy-tags">
-							<li>Unity</li>
-							<li>Photon Quantum</li>
-							<li>ASP.NET Core</li>
-							<li>PostgreSQL</li>
-							<li>Redis</li>
-							<li>Hangfire</li>
-							<li>Stripe</li>
-							<li>S3 Storage</li>
-							<li>.NET MAUI</li>
-							<li>WPF</li>
-							<li>Docker</li>
-							<li>Codemagic</li>
-						</ul>
-					</article>
-
-					<!-- Blockchain Game Wagering Platform -->
-					<article class="post wagering-case-study" id="blockchain-wagering">
-						<header class="major">
-							<span class="date">Multiplayer Blockchain Wagering Platform</span>
-							<h2><a href="#">Blockchain Game Wagering Platform</a></h2>
-							<p>A real-time multiplayer wagering platform where I built several deterministic Photon Quantum games and helped connect them to backend, WebSocket, and encrypted data flows for competitive play.</p>
-						</header>
-
-						<div class="wagering-media">
-							<div class="wagering-shot">
-								<img src="images/blockchain-wagering/bomberpig-mainmenu.png" alt="Bomber Pig game menu with free and wager match options" />
-								<p class="wagering-caption">Bomber Pig lobby/menu flow with free and wager match entry points.</p>
-							</div>
-							<div class="wagering-shot">
-								<img src="images/blockchain-wagering/bomber-ingame.webp" alt="Bomber Pig in-game deterministic multiplayer arena" />
-								<p class="wagering-caption">Bomberman-style in-game arena built around deterministic multiplayer simulation.</p>
-							</div>
-							<div class="wagering-shot">
-								<img src="images/blockchain-wagering/chess.png" alt="Deterministic multiplayer chess game screen" />
-								<p class="wagering-caption">Chess implementation with timed player turns and synchronized board state.</p>
-							</div>
-							<div class="wagering-shot">
-								<img src="images/blockchain-wagering/8ball.png" alt="Deterministic multiplayer 8-ball pool game screen" />
-								<p class="wagering-caption">8-ball pool game with real-time aiming, turn state, and player session UI.</p>
-							</div>
-						</div>
-
-						<p>I worked on this platform before Winzy, building multiple competitive games for a blockchain wagering product where players could enter skill-based matches, play in real time, and have the game client coordinate with backend services for secure operations. The core challenge was making very different games feel consistent inside one platform while keeping multiplayer state deterministic, responsive, and trustworthy.</p>
-
-						<div class="wagering-grid">
-							<section class="wagering-panel games">
-								<h3>Deterministic Multiplayer Games</h3>
-								<p>I created several multiplayer games for the platform, including Chess, Pool, Bomberman-style gameplay, and additional prototypes, and integrated them into the platform's shared real-time event loop.</p>
-								<ul>
-									<li>Built the games with a deterministic multiplayer approach using Photon Quantum so both players could share authoritative simulation results instead of relying on fragile client-only state.</li>
-									<li>Implemented game-specific logic for turn handling, match flow, board/table/arena state, player actions, win/loss conditions, UI feedback, and synchronized gameplay events.</li>
-									<li>Adapted each game to the same platform expectations: wager/free entry points, session identity, match events, player status, and consistent real-time interaction patterns.</li>
-								</ul>
-							</section>
-
-							<section class="wagering-panel backend">
-								<h3>Backend Collaboration</h3>
-								<p>I collaborated with backend engineers to design and implement a Spring Boot server that supported seamless game operations across the wagering platform.</p>
-								<ul>
-									<li>Worked through the contracts between Unity/Photon game clients and backend services so game sessions, player actions, and match lifecycle events could move cleanly through the platform.</li>
-									<li>Helped shape backend-facing event payloads and operational flows for real-time multiplayer games with wagering-sensitive state.</li>
-									<li>Kept implementation practical across game client and server boundaries, making sure gameplay events were usable by the backend without slowing down the player experience.</li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="wagering-grid">
-							<section class="wagering-panel realtime">
-								<h3>Real-Time Networking</h3>
-								<p>I built and optimized WebSocket connections for real-time interactions, allowing the platform to handle in-game events and player state updates at scale.</p>
-								<ul>
-									<li>Implemented event-driven communication paths for gameplay updates, match status, player actions, and platform events.</li>
-									<li>Optimized WebSocket behavior so time-sensitive gameplay interactions stayed responsive while still fitting the platform's backend event model.</li>
-									<li>Focused on stable real-time delivery across multiple game types instead of solving each game as a separate networking problem.</li>
-								</ul>
-							</section>
-
-							<section class="wagering-panel security">
-								<h3>Security &amp; Data Protection</h3>
-								<p>I implemented secure data transmission using RSA and AES encryption, adding defense-in-depth around traffic moving between the client, platform, and backend services.</p>
-								<ul>
-									<li>Used asymmetric and symmetric encryption patterns to protect sensitive request and event payloads.</li>
-									<li>Helped harden the platform's game communication layer for a wagering context where trust, tamper resistance, and reliable state transfer matter.</li>
-									<li>Balanced security work with gameplay requirements so protection did not compromise real-time responsiveness.</li>
-								</ul>
-							</section>
-						</div>
-
-						<ul class="wagering-tags">
-							<li>Unity</li>
-							<li>Photon Quantum</li>
-							<li>Deterministic Multiplayer</li>
-							<li>Spring Boot</li>
-							<li>WebSockets</li>
-							<li>RSA</li>
-							<li>AES</li>
-							<li>Blockchain</li>
-							<li>Wagering</li>
-						</ul>
-					</article>
-
-					<!-- Plooshy Island -->
-					<article class="post featured">
-						<header class="major">
-							<h2><a href="#">Plooshy Island</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/plooshy_island.jpg" alt="Plooshy Island" /></a>
-						
-						<p>An ambitious open-world WebGL multiplayer blockchain game, aiming to create an immersive WEB3 gaming experience for players world-wide.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
-
-					<!-- Epoch Conquest -->
-					<article class="post">
-						<header class="major">
-							<h2><a href="#">Epoch Conquest</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/epoch_conquest.jpg" alt="Epoch Conquest" /></a>
-						
-						<p>Epoch Conquest is a real-time strategy multiplayer desktop game set in a dynamic world where history and mythology converge, emphasizing real-time tactical decision-making, resource management, and military strategy.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
-
-					<!-- Vecos -->
-					<article class="post">
-						<header class="major">
-							<h2><a href="#">Vecos</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/vecos.jpg" alt="Vecos" /></a>
-						
-						<p>A multiplatform multiplayer game, where you can join other people in different sessions to participate in educational activities, primarily artistic creations that can be made either alone or collaboratively and exposed in a showroom where they can be rated.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
-
-					<!-- Seven Seas -->
-					<article class="post">
-						<header class="major">
-							<h2><a href="#">Seven Seas</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/seven_seas.jpg" alt="Seven Seas" /></a>
-						
-						<p>Seven Seas is a pirates multiplayer Unity3D game where players can fight, and drive ships together to explore the vast world.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
-
-					<!-- Hush -->
-					<article class="post">
-						<header class="major">
-							<h2><a href="#">Hush</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/hush.jpg" alt="Hush" /></a>
-						
-						<p>Hush is a horror game inspired by the slasher mod in GTA V. The game contains a matchmaking system made in Node.js and socketio, once a lobby containing 5 players is found a random slasher is chosen between them and the game starts.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
-
-					<!-- On Your Own -->
-					<article class="post">
-						<header class="major">
-							<h2><a href="#">On Your Own</a></h2>
-						</header>
-						<a href="#" class="image main"><img src="images/on_your_own.jpg" alt="On Your Own" /></a>
-						
-						<p>On Your Own is a survival game like Rust, containing a server browser, building system, PVP, animals, chat system, and party system.</p>
-						<ul class="actions special">
-							
-						</ul>
-					</article>
+					<div>
+						<img src="images/winzy-launcher.png" alt="Winzy Desktop launcher game library" />
+						<p class="winzy-caption">Winzy Desktop launcher: a native Windows/macOS app for authentication,
+							wallet access, game discovery, downloads, updates, and secure game launch.</p>
+					</div>
 				</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/atefboutara" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+				<section class="winzy-overview">
+					<p>Winzy is a skill-based competitive gaming platform where players can authenticate, download the
+						game, join free or paid matches, compete in a Photon Quantum FPS, earn quest progress, and have
+						match results settle through a backend wallet and payment system. I worked across the whole
+						product surface: gameplay, client/backend integration, launcher, infrastructure, build delivery,
+						and validation.</p>
+				</section>
 
-			</div>
+				<div class="winzy-grid">
+					<section class="winzy-panel game">
+						<h3>Full Moon Fury Game</h3>
+						<p>I built the game-side systems that turn the FPS into a platform-connected competitive product
+							instead of a standalone prototype.</p>
+						<ul>
+							<li>Implemented Photon Quantum gameplay flow: spawning, health, weapons, pickups, respawns,
+								warmup, countdown, skirmish, running match state, overtime, burn-phase resolution,
+								disconnect handling, auto-victory, and end-of-match reporting.</li>
+							<li>Built the match coordinator that connects Unity to the backend and Photon: free and paid
+								queues, payout-tier selection, ticket polling, estimated waits, match-found UI, Photon
+								room startup, join tokens, connection confirmation, cancellation races, void detection,
+								abandon calls, and automatic requeue recovery.</li>
+							<li>Created gameplay-facing UI for authentication, mode selection, matchmaking, paid-match
+								errors, scoreboard, kill feed, crosshair feedback, health, weapons, game-over, payout
+								screens, quests, surveys, loading states, mobile joystick controls, settings,
+								verification, and consent flows.</li>
+							<li>Integrated quest telemetry from gameplay events, including match plays, wins,
+								first-place finishes, kills, deaths, headshots, damage dealt, and weapon pickups with
+								match-scoped idempotency keys.</li>
+							<li>Prepared the game for WebGL, desktop, and mobile/APK delivery with WebGL performance
+								management, native mobile auth fallback, Android texture optimization, mobile input, and
+								platform-specific build tooling.</li>
+						</ul>
+					</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<section class="winzy-panel launcher">
+						<h3>Winzy Desktop Launcher</h3>
+						<p>I created a native launcher so players can install, update, authenticate, and launch Winzy on
+							Windows and macOS.</p>
+						<ul>
+							<li>Built a layered .NET launcher across Core, API, Services, UI, and MAUI projects, with
+								login, registration, email verification, consent, wallet display, settings, game
+								library, install state, and a custom dark themed interface.</li>
+							<li>Implemented game download and install flows: remote manifest fetching, cover images,
+								install directory selection, disk-space checks, authenticated downloads, progress and
+								speed tracking, SHA-256 verification, zip extraction, local install metadata, update
+								detection, launch tracking, and uninstall support.</li>
+							<li>Added smart updates for installed games using per-file manifests, local hashing,
+								changed-file downloads, deleted-file cleanup, empty-directory cleanup, fallback full-zip
+								installs, and optional download throttling.</li>
+							<li>Built Windows and macOS launch bridges: Windows executable discovery and DPAPI auth
+								handoff, macOS .app bundle discovery, executable-bit restoration, quarantine attribute
+								removal, chmod-protected auth handoff, and launch through platform-specific process
+								handling.</li>
+							<li>Connected launcher releases to backend-hosted update feeds with Velopack scaffolding,
+								Codemagic configuration, release packaging scripts, macOS verification scripts, and
+								platform-specific update delivery.</li>
+						</ul>
+					</section>
+				</div>
 
-	</body>
+				<div class="winzy-grid">
+					<section class="winzy-panel backend">
+						<h3>Backend &amp; Infrastructure</h3>
+						<p>I engineered the backend as a production-style .NET platform powering the game, launcher,
+							payments, and operations.</p>
+						<ul>
+							<li>Built a layered ASP.NET Core backend with Domain, Application, Infrastructure, and API
+								projects using PostgreSQL, Redis, Hangfire, Stripe, S3-compatible storage, JWT auth,
+								Serilog, Sentry, Swagger, health checks, rate limiting, CORS, and cloud-ready
+								configuration.</li>
+							<li>Implemented identity, profile, consent, beta access, waitlist, wallet, KYC, payments,
+								refunds, disputes, withdrawals, admin player management, game/ruleset administration,
+								quests, surveys, weapon skins, replays, audit logs, risk flags, and brand events.</li>
+							<li>Designed paid and free matchmaking with queue tickets, idempotent enqueue, pay-tier
+								validation, paid-play gating, long-poll status, late-join windows, roster locking,
+								no-show removal, entry-fee holds, fee capture, match voiding, and ticket requeueing.
+							</li>
+							<li>Built settlement logic for server-authoritative finalization, result hashes, placement
+								recording, configurable payout policies, rake calculation, payout-tier snapshots,
+								transaction-safe money movement, refund-only voids, admin-review routing, and recovery
+								jobs.</li>
+						</ul>
+					</section>
+
+					<section class="winzy-panel delivery">
+						<h3>Testing, Release &amp; Delivery</h3>
+						<p>I pushed the project from prototype scope into a tested MVP that could be presented as a real
+							platform.</p>
+						<ul>
+							<li>Created integration and contract test coverage for happy paths, webhook idempotency,
+								invalid signatures, refunds, disputes, finalize security, join idempotency, gating,
+								Photon custom auth, KYC, waitlist, matchmaking, surveys, fake providers, signed
+								payloads, and real Stripe test behavior.</li>
+							<li>Shipped deployment work across Docker, database migrations, PostgreSQL/Redis URL
+								parsing, upload limits, Sentry scrubbing, Hangfire recurring jobs, CI scripts, Unity
+								build automation, macOS universal builds, desktop build APIs, launcher packaging, and
+								S3-backed game/update delivery.</li>
+							<li>Built the platform to support WebGL, Windows, macOS, and Android APK paths, with mobile
+								deployment work already prepared for the next release phase.</li>
+						</ul>
+					</section>
+				</div>
+
+				<ul class="winzy-tags">
+					<li>Unity</li>
+					<li>Photon Quantum</li>
+					<li>ASP.NET Core</li>
+					<li>PostgreSQL</li>
+					<li>Redis</li>
+					<li>Hangfire</li>
+					<li>Stripe</li>
+					<li>S3 Storage</li>
+					<li>.NET MAUI</li>
+					<li>WPF</li>
+					<li>Docker</li>
+					<li>Codemagic</li>
+				</ul>
+			</article>
+
+			<!-- Blockchain Game Wagering Platform -->
+			<article class="post wagering-case-study reveal" id="blockchain-wagering">
+				<header class="major">
+					<span class="date">Multiplayer Blockchain Wagering Platform</span>
+					<h2><a href="#">Blockchain Game Wagering Platform</a></h2>
+					<p>A real-time multiplayer wagering platform where I built several deterministic Photon Quantum
+						games and helped connect them to backend, WebSocket, and encrypted data flows for competitive
+						play.</p>
+				</header>
+
+				<div class="wagering-media">
+					<div class="wagering-shot">
+						<img src="images/blockchain-wagering/bomberpig-mainmenu.png"
+							alt="Bomber Pig game menu with free and wager match options" />
+						<p class="wagering-caption">Bomber Pig lobby/menu flow with free and wager match entry points.
+						</p>
+					</div>
+					<div class="wagering-shot">
+						<img src="images/blockchain-wagering/bomber-ingame.webp"
+							alt="Bomber Pig in-game deterministic multiplayer arena" />
+						<p class="wagering-caption">Bomberman-style in-game arena built around deterministic multiplayer
+							simulation.</p>
+					</div>
+					<div class="wagering-shot">
+						<img src="images/blockchain-wagering/chess.png"
+							alt="Deterministic multiplayer chess game screen" />
+						<p class="wagering-caption">Chess implementation with timed player turns and synchronized board
+							state.</p>
+					</div>
+					<div class="wagering-shot">
+						<img src="images/blockchain-wagering/8ball.png"
+							alt="Deterministic multiplayer 8-ball pool game screen" />
+						<p class="wagering-caption">8-ball pool game with real-time aiming, turn state, and player
+							session UI.</p>
+					</div>
+				</div>
+
+				<p>I worked on this platform before Winzy, building multiple competitive games for a blockchain wagering
+					product where players could enter skill-based matches, play in real time, and have the game client
+					coordinate with backend services for secure operations. The core challenge was making very different
+					games feel consistent inside one platform while keeping multiplayer state deterministic, responsive,
+					and trustworthy.</p>
+
+				<div class="wagering-grid">
+					<section class="wagering-panel games">
+						<h3>Deterministic Multiplayer Games</h3>
+						<p>I created several multiplayer games for the platform, including Chess, Pool, Bomberman-style
+							gameplay, and additional prototypes, and integrated them into the platform's shared
+							real-time event loop.</p>
+						<ul>
+							<li>Built the games with a deterministic multiplayer approach using Photon Quantum so both
+								players could share authoritative simulation results instead of relying on fragile
+								client-only state.</li>
+							<li>Implemented game-specific logic for turn handling, match flow, board/table/arena state,
+								player actions, win/loss conditions, UI feedback, and synchronized gameplay events.</li>
+							<li>Adapted each game to the same platform expectations: wager/free entry points, session
+								identity, match events, player status, and consistent real-time interaction patterns.
+							</li>
+						</ul>
+					</section>
+
+					<section class="wagering-panel backend">
+						<h3>Backend Collaboration</h3>
+						<p>I collaborated with backend engineers to design and implement a Spring Boot server that
+							supported seamless game operations across the wagering platform.</p>
+						<ul>
+							<li>Worked through the contracts between Unity/Photon game clients and backend services so
+								game sessions, player actions, and match lifecycle events could move cleanly through the
+								platform.</li>
+							<li>Helped shape backend-facing event payloads and operational flows for real-time
+								multiplayer games with wagering-sensitive state.</li>
+							<li>Kept implementation practical across game client and server boundaries, making sure
+								gameplay events were usable by the backend without slowing down the player experience.
+							</li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="wagering-grid">
+					<section class="wagering-panel realtime">
+						<h3>Real-Time Networking</h3>
+						<p>I built and optimized WebSocket connections for real-time interactions, allowing the platform
+							to handle in-game events and player state updates at scale.</p>
+						<ul>
+							<li>Implemented event-driven communication paths for gameplay updates, match status, player
+								actions, and platform events.</li>
+							<li>Optimized WebSocket behavior so time-sensitive gameplay interactions stayed responsive
+								while still fitting the platform's backend event model.</li>
+							<li>Focused on stable real-time delivery across multiple game types instead of solving each
+								game as a separate networking problem.</li>
+						</ul>
+					</section>
+
+					<section class="wagering-panel security">
+						<h3>Security &amp; Data Protection</h3>
+						<p>I implemented secure data transmission using RSA and AES encryption, adding defense-in-depth
+							around traffic moving between the client, platform, and backend services.</p>
+						<ul>
+							<li>Used asymmetric and symmetric encryption patterns to protect sensitive request and event
+								payloads.</li>
+							<li>Helped harden the platform's game communication layer for a wagering context where
+								trust, tamper resistance, and reliable state transfer matter.</li>
+							<li>Balanced security work with gameplay requirements so protection did not compromise
+								real-time responsiveness.</li>
+						</ul>
+					</section>
+				</div>
+
+				<ul class="wagering-tags">
+					<li>Unity</li>
+					<li>Photon Quantum</li>
+					<li>Deterministic Multiplayer</li>
+					<li>Spring Boot</li>
+					<li>WebSockets</li>
+					<li>RSA</li>
+					<li>AES</li>
+					<li>Blockchain</li>
+					<li>Wagering</li>
+				</ul>
+			</article>
+
+			<!-- Other Projects — Card Grid -->
+			<section class="projects-grid-section reveal">
+				<h2 class="section-title">Other Projects</h2>
+				<p class="section-subtitle">More games built across different genres, platforms, and networking stacks.
+				</p>
+
+				<div class="projects-grid">
+					<div class="project-card reveal-scale reveal-delay-1" data-project="plooshy">
+						<div class="card-image">
+							<img src="images/plooshy_island.jpg" alt="Plooshy Island" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>Plooshy Island</h3>
+							<p>An ambitious open-world WebGL multiplayer blockchain game, aiming to create an immersive
+								WEB3 gaming experience for players world-wide.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+
+					<div class="project-card reveal-scale reveal-delay-2" data-project="epoch">
+						<div class="card-image">
+							<img src="images/epoch_conquest.jpg" alt="Epoch Conquest" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>Epoch Conquest</h3>
+							<p>A real-time strategy multiplayer desktop game set in a dynamic world where history and
+								mythology converge, emphasizing tactical decision-making and resource management.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+
+					<div class="project-card reveal-scale reveal-delay-3" data-project="vecos">
+						<div class="card-image">
+							<img src="images/vecos.jpg" alt="Vecos" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>Vecos</h3>
+							<p>A multiplatform multiplayer game for collaborative educational activities and artistic
+								creations, with a showroom where work can be exhibited and rated.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+
+					<div class="project-card reveal-scale reveal-delay-4" data-project="sevenseas">
+						<div class="card-image">
+							<img src="images/seven_seas.jpg" alt="Seven Seas" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>Seven Seas</h3>
+							<p>A pirates multiplayer Unity3D game where players can fight and drive ships together to
+								explore the vast world.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+
+					<div class="project-card reveal-scale reveal-delay-5" data-project="hush">
+						<div class="card-image">
+							<img src="images/hush.jpg" alt="Hush" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>Hush</h3>
+							<p>A horror game inspired by the slasher mod in GTA V, with a Node.js + Socket.io
+								matchmaking system that selects a random slasher from a 5-player lobby.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+
+					<div class="project-card reveal-scale reveal-delay-6" data-project="onyourown">
+						<div class="card-image">
+							<img src="images/on_your_own.jpg" alt="On Your Own" />
+							<span class="card-overlay"><span class="card-overlay-text">View Project <i
+										class="fas fa-arrow-right"></i></span></span>
+						</div>
+						<div class="card-body">
+							<h3>On Your Own</h3>
+							<p>A survival game like Rust, featuring a server browser, building system, PVP, animals,
+								chat system, and party system.</p>
+							<span class="card-hint">View details <i class="fas fa-arrow-right"></i></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://github.com/atefboutara" target="_blank"
+								class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+
 </html>
