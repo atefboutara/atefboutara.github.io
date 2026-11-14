@@ -191,16 +191,60 @@
   /* -----------------------------------------------
      4. INIT ON DOM READY
      ----------------------------------------------- */
+  /* -----------------------------------------------
+     3b. COPY-TO-CLIPBOARD (Discord username)
+     ----------------------------------------------- */
+  function initCopyButtons() {
+    document.querySelectorAll('[data-copy]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var text = el.getAttribute('data-copy');
+        var label = el.querySelector('.copy-label');
+        var done = function () {
+          el.classList.add('copied');
+          if (label) {
+            if (!label.dataset.original) label.dataset.original = label.textContent;
+            label.textContent = 'Copied!';
+          }
+          setTimeout(function () {
+            el.classList.remove('copied');
+            if (label) label.textContent = label.dataset.original;
+          }, 1600);
+        };
+        var fallback = function () {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+          document.body.removeChild(ta);
+          if (ok) done(); else window.prompt('Discord username:', text);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
+    });
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       initScrollReveal();
       initParticles();
       initProjectCards();
+      initCopyButtons();
     });
   } else {
     initScrollReveal();
     initParticles();
     initProjectCards();
+    initCopyButtons();
   }
 
 })();
