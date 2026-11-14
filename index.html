@@ -274,6 +274,105 @@
 				</ul>
 			</article>
 
+			<!-- Trenches -->
+			<article class="post featured trenches-case-study reveal" id="trenches">
+				<header class="major">
+					<span class="date">Live Multiplayer FPS &middot; Web &middot; Solana Economy</span>
+					<h2><a href="https://playtrenches.com" target="_blank" rel="noopener">Trenches</a></h2>
+					<p>A live browser FPS where players stake real money on free-for-all fights and 1v1 duels, with a
+						Solana-based economy. I work across the game client, real-time servers and the backend, and led
+						its migration from Unity WebGL to Three.js and Colyseus.</p>
+					<ul class="actions special">
+						<li><a href="https://playtrenches.com" target="_blank" rel="noopener"
+								class="button primary trenches-play-btn"><i class="fas fa-crosshairs"></i> Play
+								Trenches</a></li>
+					</ul>
+				</header>
+
+				<div class="trenches-video">
+					<video controls muted playsinline preload="metadata" poster="images/trenches/trenches-poster.jpg"
+						aria-label="Trenches gameplay video">
+						<source src="images/trenches/trenches-gameplay.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+					<p class="trenches-caption">Trenches gameplay: fast-paced FPS combat with live cash rewards on every
+						elimination.</p>
+				</div>
+
+				<section class="trenches-overview">
+					<p>Trenches started as a Unity WebGL FPS on Photon Fusion and has since been fully rebuilt for the
+						browser. Paid matches now run on Three.js with authoritative Colyseus servers, and free mode stays
+						on Photon PUN through its JavaScript SDK. Every elimination moves real value, so validating combat
+						on the server, keeping the ledger correct and handling withdrawals safely matter as much as the
+						gameplay.</p>
+				</section>
+
+				<div class="trenches-grid">
+					<section class="trenches-panel client">
+						<h3>Three.js Client &amp; Migration</h3>
+						<ul>
+							<li>Ported the game from Unity to Three.js (TypeScript, Vite): movement, combat, weapons,
+								grenades, loadouts, respawns, bots and the HUD.</li>
+							<li>Parity tests check gameplay behavior against the original Unity version.</li>
+							<li>Desktop and mobile builds with touch controls and PlayStation/Xbox controller support.
+							</li>
+						</ul>
+					</section>
+
+					<section class="trenches-panel realtime">
+						<h3>Real-Time Multiplayer</h3>
+						<ul>
+							<li>Authoritative Colyseus servers for paid matches, so combat and results are validated on
+								the server instead of trusted to players' devices.</li>
+							<li>Photon PUN through the JavaScript SDK for free mode.</li>
+							<li>Free-for-all and 1v1 duels with paid entry, continuous rounds and reconnection after
+								disconnects.</li>
+							<li>Game coordinator that launches server instances, assigns players, monitors sessions and
+								shuts down idle servers.</li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="trenches-grid">
+					<section class="trenches-panel wallet">
+						<h3>Accounts, Wallets &amp; Solana</h3>
+						<ul>
+							<li>In-house authentication and managed wallets replacing Privy: Google sign-in, session
+								restore and verified identity linking.</li>
+							<li>Automatic legacy-account migration that preserves balances, inventory and ownership.</li>
+							<li>Solana deposits and withdrawals with on-chain confirmation, keeping treasury signing
+								isolated from the game runtime.</li>
+						</ul>
+					</section>
+
+					<section class="trenches-panel ops">
+						<h3>Economy, Integrity &amp; Operations</h3>
+						<ul>
+							<li>Transactional ledger with idempotent receipts, reserved funds, refunds and reconciliation
+								to prevent duplicate credits or payouts.</li>
+							<li>Bot-farming detection, moderation workflows and pre-withdrawal checks.</li>
+							<li>Releases across Vercel, Linux VPS, coordinators and dedicated servers, with
+								staging/production isolation and live incident diagnosis.</li>
+						</ul>
+					</section>
+				</div>
+
+				<ul class="trenches-tags">
+					<li>Three.js</li>
+					<li>TypeScript</li>
+					<li>Colyseus</li>
+					<li>Photon PUN (JS)</li>
+					<li>Unity (legacy)</li>
+					<li>Photon Fusion (legacy)</li>
+					<li>Node.js</li>
+					<li>Vercel</li>
+					<li>Firebase/Firestore</li>
+					<li>Solana</li>
+					<li>WebGL</li>
+					<li>Anti-Cheat</li>
+				</ul>
+			</article>
+
 			<!-- Winzy -->
 			<article class="post featured winzy-case-study reveal">
 				<header class="major">
