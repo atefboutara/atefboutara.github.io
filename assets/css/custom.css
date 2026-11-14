@@ -788,6 +788,374 @@ button,
 
 
 /* ================================================================
+   11a. CHRONOS CASE STUDY
+   ================================================================ */
+
+.chronos-case-study .chronos-hero img {
+  display: block;
+  width: 100%;
+  margin: 2rem 0 1.5rem 0;
+  border-radius: var(--radius-md) !important;
+  border: solid 1px var(--border-glass) !important;
+}
+
+.chronos-case-study .chronos-video {
+  margin: 0 0 2rem 0;
+}
+
+.chronos-case-study .chronos-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: solid 1px var(--border-glass);
+  background: var(--bg-secondary);
+}
+
+.chronos-case-study .chronos-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.chronos-case-study .chronos-caption {
+  margin: 0.55rem 0 0;
+  color: var(--text-muted) !important;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.chronos-case-study .chronos-overview {
+  max-width: 60rem;
+  margin: 0 auto 2rem auto;
+}
+
+.chronos-case-study .chronos-overview p {
+  color: var(--text-secondary) !important;
+}
+
+.chronos-case-study .chronos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.chronos-case-study .chronos-panel {
+  min-width: 0;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-top: solid 3px var(--accent-orange);
+  text-align: left;
+  transition: border-color 0.3s var(--ease-smooth), background 0.3s var(--ease-smooth);
+}
+
+.chronos-case-study .chronos-panel:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-glass);
+}
+
+.chronos-case-study .chronos-panel.rpg { border-top-color: var(--accent-violet); }
+.chronos-case-study .chronos-panel.multiplayer { border-top-color: var(--accent-cyan); }
+.chronos-case-study .chronos-panel.backend { border-top-color: var(--accent-blue); }
+.chronos-case-study .chronos-panel.delivery { border-top-color: var(--accent-emerald); }
+
+.chronos-case-study .chronos-panel-wide {
+  margin: 2rem 0;
+}
+
+.chronos-case-study .chronos-panel h3 {
+  margin: 0 0 0.75rem 0 !important;
+  font-size: 1.15rem !important;
+}
+
+.chronos-case-study .chronos-panel ul {
+  margin: 0 0 0 1.15rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.chronos-case-study .chronos-panel li {
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.chronos-case-study .chronos-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none !important;
+  margin: 2.5rem 0 0 0;
+  padding: 0;
+}
+
+.chronos-case-study .chronos-tags li {
+  background: rgba(251, 146, 60, 0.08);
+  border: solid 1px rgba(251, 146, 60, 0.22);
+  border-radius: 100px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.85rem;
+  text-transform: uppercase;
+  color: var(--accent-orange);
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.chronos-case-study .chronos-tags li:hover {
+  background: rgba(251, 146, 60, 0.15);
+  border-color: rgba(251, 146, 60, 0.4);
+}
+
+@media screen and (max-width: 980px) {
+  .chronos-case-study .chronos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .chronos-case-study {
+    box-sizing: border-box;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  .chronos-case-study header.major h2 {
+    font-size: 1.35rem !important;
+    letter-spacing: 0 !important;
+    line-height: 1.18 !important;
+  }
+
+  .chronos-case-study p,
+  .chronos-case-study li {
+    overflow-wrap: anywhere;
+    text-align: left !important;
+  }
+
+  .chronos-case-study .chronos-tags {
+    justify-content: flex-start;
+  }
+}
+
+
+/* ================================================================
+   11b. BOUNTY RUN CASE STUDY (published on Google Play)
+   ================================================================ */
+
+.bounty-case-study .bounty-icon {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin: 1.25rem auto 1rem auto;
+  border-radius: 24px;
+  border: solid 1px rgba(250, 204, 21, 0.35);
+  box-shadow: 0 10px 40px rgba(250, 204, 21, 0.18);
+}
+
+.bounty-case-study .bounty-play-btn {
+  background: #facc15 !important;
+  color: #111 !important;
+  box-shadow: 0 0 24px rgba(250, 204, 21, 0.25) !important;
+}
+
+.bounty-case-study .bounty-play-btn:hover {
+  background: #fde047 !important;
+  box-shadow: 0 0 32px rgba(250, 204, 21, 0.4) !important;
+}
+
+.bounty-case-study .bounty-play-btn i {
+  margin-right: 0.5rem;
+}
+
+.bounty-case-study .bounty-hero {
+  margin: 2rem 0 1rem 0;
+}
+
+.bounty-case-study .bounty-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.bounty-case-study .bounty-shot {
+  min-width: 0;
+}
+
+.bounty-case-study .bounty-shot-wide {
+  grid-column: 1 / -1;
+  max-width: 75%;
+  justify-self: center;
+}
+
+.bounty-case-study .bounty-hero img,
+.bounty-case-study .bounty-shot img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-md) !important;
+  border: solid 1px var(--border-glass) !important;
+  background: var(--bg-secondary);
+  transition: transform 0.4s var(--ease-smooth), border-color 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
+}
+
+.bounty-case-study .bounty-hero img:hover,
+.bounty-case-study .bounty-shot img:hover {
+  transform: scale(1.015);
+  border-color: rgba(250, 204, 21, 0.45) !important;
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.12);
+}
+
+.bounty-case-study .bounty-caption {
+  margin: 0.55rem 0 0;
+  color: var(--text-muted) !important;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.bounty-case-study .bounty-overview {
+  max-width: 60rem;
+  margin: 0 auto 2rem auto;
+}
+
+.bounty-case-study .bounty-overview p {
+  color: var(--text-secondary) !important;
+}
+
+.bounty-case-study .bounty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.bounty-case-study .bounty-panel {
+  min-width: 0;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-top: solid 3px #facc15;
+  transition: border-color 0.3s var(--ease-smooth), background 0.3s var(--ease-smooth);
+}
+
+.bounty-case-study .bounty-panel:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-glass);
+}
+
+.bounty-case-study .bounty-panel.online {
+  border-top-color: var(--accent-cyan);
+}
+
+.bounty-case-study .bounty-panel.backend {
+  border-top-color: var(--accent-blue);
+}
+
+.bounty-case-study .bounty-panel.release {
+  border-top-color: var(--accent-emerald);
+}
+
+.bounty-case-study .bounty-panel h3 {
+  margin: 0 0 0.75rem 0 !important;
+  font-size: 1.15rem !important;
+}
+
+.bounty-case-study .bounty-panel ul {
+  margin: 0 0 0 1.15rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.bounty-case-study .bounty-panel li {
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.bounty-case-study .bounty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none !important;
+  margin: 2.5rem 0 0 0;
+  padding: 0;
+}
+
+.bounty-case-study .bounty-tags li {
+  background: rgba(250, 204, 21, 0.08);
+  border: solid 1px rgba(250, 204, 21, 0.22);
+  border-radius: 100px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.85rem;
+  text-transform: uppercase;
+  color: #facc15;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.bounty-case-study .bounty-tags li:hover {
+  background: rgba(250, 204, 21, 0.15);
+  border-color: rgba(250, 204, 21, 0.4);
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.15);
+}
+
+@media screen and (max-width: 980px) {
+  .bounty-case-study .bounty-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .bounty-case-study {
+    box-sizing: border-box;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  .bounty-case-study .bounty-media {
+    grid-template-columns: 1fr;
+  }
+
+  .bounty-case-study .bounty-shot-wide {
+    max-width: 100%;
+  }
+
+  .bounty-case-study header.major h2 {
+    font-size: 1.35rem !important;
+    letter-spacing: 0 !important;
+    line-height: 1.18 !important;
+  }
+
+  .bounty-case-study p,
+  .bounty-case-study li {
+    overflow-wrap: anywhere;
+    text-align: left !important;
+  }
+
+  .bounty-case-study .bounty-tags {
+    justify-content: flex-start;
+  }
+}
+
+
+/* ================================================================
    12. PROJECTS GRID — Smaller Projects
    ================================================================ */
 
